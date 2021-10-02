@@ -1,4 +1,4 @@
-import { BrowserRouter as Router, Switch, Route, Link } from "react-router-dom";
+import { BrowserRouter as Link } from "react-router-dom";
 import MoreDetail from "../../pages/MoreDetail";
 import "./Card.css";
 import profileImg from '../../images/profile.jpg';
