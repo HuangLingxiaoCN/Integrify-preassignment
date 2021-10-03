@@ -19,6 +19,10 @@ const Homepage = () => {
           name: data[key].name,
           username: data[key].username,
           website: data[key].website,
+          email: data[key].email,
+          company: data[key].company.name,
+          phone: data[key].phone,
+          address: data[key].address,
         });
       }
       setUserData(loadedData);

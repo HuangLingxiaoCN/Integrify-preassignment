@@ -1,10 +1,15 @@
-import { BrowserRouter as Link } from "react-router-dom";
-import MoreDetail from "../../pages/MoreDetail";
+import { Link } from "react-router-dom";
+// import MoreDetail from "../../pages/MoreDetail";
 import "./Card.css";
-import profileImg from '../../images/profile.jpg';
+import profileImg from "../../images/profile.jpg";
 
 const Card = (props) => {
   const { name, username, website } = props.userData;
+
+  const linkTo = {
+    pathname: "/moredetail",
+    state: { userData: props.userData },
+  };
 
   return (
     <div className="card">
@@ -14,9 +19,9 @@ const Card = (props) => {
       <a href={website} className="website">
         {`http://${website}`}
       </a>
-      <Link to="/moredetail">
-        <MoreDetail />
-      </Link>
+      <Link to={linkTo} params={{ testValue: "Hello" }} className="moredetail">
+        More Details
+      </Link>{" "}
     </div>
   );
 };

@@ -23,3 +23,24 @@ img {
 .username {
   font-style: italic;
 }
+
+.website {
+  pointer-events: none;
+}
+
+.moredetail {
+  height: 1.5rem;
+  width: 8rem;
+  text-align: center;
+  padding: 0.5rem;
+  margin-top: 0.5rem;
+  background: rgb(96, 96, 231);
+  color: white;
+  text-decoration: none;
+  text-transform: uppercase;
+  border-radius: 0.5rem;
+}
+
+.moredetail:hover {
+  filter: brightness(0.7);
+}

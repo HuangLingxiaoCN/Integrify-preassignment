@@ -1,0 +1,11 @@
+.moredetail-container {
+  background: white;
+}
+
+.detail-list {
+  list-style: none;
+}
+
+.address-list {
+  list-style: disc;
+}
